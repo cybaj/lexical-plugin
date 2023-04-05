@@ -21,6 +21,7 @@ function useAudioUpload(
       const file = inputRef.current.files[0];
       const url = URL.createObjectURL(file);
 
+      inputRef.current.files = null;
       if (url) {
         onSubmit(url);
       }

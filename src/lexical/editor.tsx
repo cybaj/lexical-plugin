@@ -4,6 +4,7 @@ import AudioPlugin from "./plugins/AudioPlugin";
 import { AudioAdditionButton } from "./plugins/AudioPlugin/element";
 import EmoticonPlugin from "./plugins/EmoticonPlugin";
 import { THPlainTextPlugin } from "./plugins/PlainText";
+import {THRichTextPlugin} from "./plugins/RichText";
 import VideoPlugin from "./plugins/VideoPlugin";
 import { VideoAdditionButton } from "./plugins/VideoPlugin/element";
 import "./styles.css";
@@ -11,7 +12,7 @@ import "./styles.css";
 export const THEditor = () => {
   return (
     <LexicalComposer initialConfig={initialConfig}>
-      <THPlainTextPlugin />
+      <THRichTextPlugin />
       <EmoticonPlugin />
       <VideoPlugin />
       <AudioPlugin />
