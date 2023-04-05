@@ -1,6 +1,7 @@
 import { EditorConfig, LexicalEditor } from "lexical";
-import {EmoticonNode} from "../plugins/EmoticonPlugin/node";
-import {VideoNode} from "../plugins/VideoPlugin/node";
+import { EmoticonNode } from "../plugins/EmoticonPlugin/node";
+import { VideoNode } from "../plugins/VideoPlugin/node";
+import { AudioNode } from "../plugins/AudioPlugin/node";
 import { initialTheme } from "../theme";
 
 export const initialConfig = {
@@ -10,7 +11,7 @@ export const initialConfig = {
     console.debug(editor);
   },
   theme: initialTheme,
-  nodes: [EmoticonNode, VideoNode],
+  nodes: [EmoticonNode, VideoNode, AudioNode],
 } as EditorConfig extends {
   onError: (error: Error, editor: LexicalEditor) => void;
 }
