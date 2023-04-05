@@ -1,0 +1,11 @@
+.emoticon {
+  color: transparent;
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 1px;
+  text-align: center;
+  vertical-align: middle;
+}
